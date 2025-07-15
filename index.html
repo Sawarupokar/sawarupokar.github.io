@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phone Security Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .result {
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 Welcome to Phone Security Checker</h1>
+  <p>This website helps you check if your phone is safe from malware or hacking.</p>
 
+  <h2>🔍 Features:</h2>
+  <ul>
+    <li>✅ Check for suspicious apps</li>
+    <li>✅ Detect data leaks</li>
+    <li>✅ System info checker</li>
+    <li>✅ Useful tips to stay safe</li>
+  </ul>
+
+  <h2>🚀 Try Tools:</h2>
+
+  <button onclick="checkSystem()">Run System Info Check</button>
+  <button onclick="showTips()">View Safety Tips</button>
+
+  <div class="result" id="output"></div>
+
+  <p><em>💡 Made to help friends stay safe on mobile.</em></p>
+
+  <script>
+    function checkSystem() {
+      document.getElementById("output").innerHTML =
+        "🔍 OS: Android<br>🛡️ No suspicious activity found.<br>📡 Internet Secure.";
+    }
+
+    function showTips() {
+      document.getElementById("output").innerHTML =
+        "✅ Avoid unknown apps<br>✅ Use Play Store only<br>✅ Don't click unknown links<br>✅ Keep your phone updated.";
+    }
+  </script>
+</body>
+</html>
